@@ -1,10 +1,15 @@
 import { catsData } from "./data.js";
 
-const emotionRadios = document.getElementById("emotion-radios")
-const getImageBtn = document.getElementById("get-image-btn")
-const gifsOnlyOption = document.getElementById("gifs-only-option")
-const memeModal = document.getElementById("meme-modal")
-const memeModalInner = document.getElementById("meme-modal-inner")
+const emotionRadios = document.getElementById("emotion-radios");
+const getImageBtn = document.getElementById("get-image-btn");
+const gifsOnlyOption = document.getElementById("gifs-only-option");
+const memeModal = document.getElementById("meme-modal");
+const memeModalInner = document.getElementById("meme-modal-inner");
+const memeModalBtn = document.getElementById("meme-modal-close-btn");
+
+memeModalBtn.addEventListener("click", function(){
+    memeModal.style.display = "none"
+})
 
 
 emotionRadios.addEventListener("change", highlightCheckedOption )
